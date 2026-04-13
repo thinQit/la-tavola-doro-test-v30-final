@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fefae0;
+  --foreground: #1d1c0d;
+
+  --card: #f8f4db;
+  --card-foreground: #1d1c0d;
+
+  --popover: #f8f4db;
+  --popover-foreground: #1d1c0d;
+
+  --primary: #722f37;
+  --primary-foreground: #fefae0;
+
+  --secondary: #f8f4db;
+  --secondary-foreground: #1d1c0d;
+
+  --muted: #ede9cf;
+  --muted-foreground: #561922;
+
+  --accent: #dda15e;
+  --accent-foreground: #1d1c0d;
+
+  --destructive: #561922;
+
+  --border: #e7e3ca;
+  --ring: #653b00;
+
+  --radius: 14px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+}
+
+/* Subtle “no-line” separation via surfaces */
+.surface {
+  background: var(--background);
+}
+.surface-low {
+  background: var(--secondary);
+}
+.surface-high {
+  background: var(--muted);
+}
+
+/* Editorial label style */
+.label-caps {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
